@@ -1,0 +1,75 @@
+.btn-grad {
+  border: 1px solid lightblue !important;
+  color: var(--bs-dark);
+}
+
+.btn-grad.active {
+  background-image: linear-gradient(
+    to right,
+    #b88af4 0%,
+    #cf8bf3 51%,
+    #a770ef 100%
+  );
+  transition: 0.5s;
+  border: none !important;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+.btn-grad:hover.active {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #56ccf2 0%,
+    #2f80ed 51%,
+    #56ccf2 100%
+  );
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+}
+
+.search-btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-btn-grad {
+  border: 1px solid grey;
+}
+
+.login-btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    #dce35b 0%,
+    #45b649 51%,
+    #dce35b 100%
+  );
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar-toggler {
+  position: fixed;
+  left: 0;
+  top: 10%;
+}
