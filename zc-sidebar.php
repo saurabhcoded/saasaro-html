@@ -1,66 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- boxicons  -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- main css  -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <!-- Navigation Bar  -->
-    <nav class="navbar navbar-expand-lg border-bottom ">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/img/logo.jpg" alt="" style="width: 60px;height:60px">
-            </a>
-            <button class="sidebar-toggler bg-success border-0 px-3 py-1 pt-2 text-white rounded-pill rounded-start"
-                data-bs-toggle="offcanvas" data-bs-target="#sidebar">
-                <i class='bx bxs-right-arrow-alt fs-2'></i> </button>
-            <div class="d-flex  align-items-center">
-                <form class="d-flex d-none d-lg-block me-2" role="search">
-                    <div class="input-group rounded-pill border" style="overflow: hidden;">
-                        <input class="form-control border-0 ps-4" style="box-shadow: none;" type="search"
-                            placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success border-0 search-btn-grad p-2 px-4"
-                            type="submit">Search</button>
-                    </div>
-                </form>
-                <button class="btn login-btn-grad  px-3 py-2 me-2 rounded-pill">Login</button>
-                <button class="btn login-btn-grad  px-3 py-2 rounded-pill bg-success text-white">Register</button>
-                <div class="btn-group dropstart">
-                    <button type="button" class="btn border-0 " data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class='bx bx-user-circle fs-1'></i>
-                    </button>
-                    <ul class="dropdown-menu p-4" style="min-width: 250px;">
-                        <li>Welcome to SaasAro, <br><span class="text-success">Saurabh Sharma</span></li>
-                        <li class="mt-2 border p-2 px-3 rounded"><a href="#" class="nav-link ">My Account</a></li>
-                        <li class="mt-2 border p-2 px-3 rounded"><a href="#" class="nav-link ">Edit Profile</a></li>
-                        <li class="mt-2 border p-2 px-3 rounded"><a href="#" class="nav-link text-danger"><i
-                                    class='bx bxs-log-out-circle text-danger'></i> Logout</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </div>
-        </div>
-    </nav>
-    <!-- Sidebar  -->
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="sidebar" style="width: 330px;">
-        <div class="offcanvas-header">
-            <!-- <h5>SaasAro</h5> -->
-            <img src="assets/img/logo.jpg" alt="" style="width: 80px;height:80px">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
+    <div id="sidebar" class="border-end">
+        <div class="sidebar-body p-3">
             <ul class="list-group">
                 <li class="list-group-item rounded py-3 border btn-grad active"><i class='bx bxs-dashboard '></i>
                     Dashboard
@@ -69,8 +8,7 @@
                     <div class="accordion border-0" id="sidebarAccordian">
                         <div class="accordion-item border-0 mt-2">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed border rounded btn-grad" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#Bookings">
+                                <button class="accordion-button collapsed border rounded btn-grad" type="button" data-bs-toggle="collapse" data-bs-target="#Bookings">
                                     <i class='bx bxs-book-open me-2'></i> Bookings
                                 </button>
                             </h2>
@@ -89,13 +27,11 @@
                         </div>
                         <div class="accordion-item border-0 mt-2">
                             <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed border rounded  btn-grad" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#Room_Management">
+                                <button class="accordion-button collapsed border rounded  btn-grad" type="button" data-bs-toggle="collapse" data-bs-target="#Room_Management">
                                     <i class='bx bxs-home me-2'></i> Room Management
                                 </button>
                             </h2>
-                            <div id="Room_Management" class="accordion-collapse collapse"
-                                data-bs-parent="#sidebarAccordian">
+                            <div id="Room_Management" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordian">
                                 <div class="accordion-body p-0">
                                     <div class="list-group">
                                         <a href="#" class="list-group-item rounded py-3 mt-1 border">Availability
@@ -109,13 +45,11 @@
                         </div>
                         <div class="accordion-item border-0 mt-2">
                             <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed border rounded  btn-grad" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#Hotel_Details">
+                                <button class="accordion-button collapsed border rounded  btn-grad" type="button" data-bs-toggle="collapse" data-bs-target="#Hotel_Details">
                                     <i class='bx bxs-buildings me-2'></i> Hotel Details
                                 </button>
                             </h2>
-                            <div id="Hotel_Details" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#sidebarAccordian">
+                            <div id="Hotel_Details" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#sidebarAccordian">
                                 <div class="accordion-body p-0">
                                     <div class="list-group">
                                         <a href="#" class="list-group-item rounded py-3 mt-1 border">General Details</a>
@@ -130,13 +64,11 @@
                         </div>
                         <div class="accordion-item border-0 mt-2">
                             <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed border rounded  btn-grad" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#User_Management">
+                                <button class="accordion-button collapsed border rounded  btn-grad" type="button" data-bs-toggle="collapse" data-bs-target="#User_Management">
                                     <i class='bx bxs-group me-2'></i> User Management
                                 </button>
                             </h2>
-                            <div id="User_Management" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#sidebarAccordian">
+                            <div id="User_Management" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#sidebarAccordian">
                                 <div class="accordion-body p-0">
                                     <div class="list-group">
                                         <a href="#" class="list-group-item rounded py-3 mt-1 border">Travel Agent</a>
@@ -149,13 +81,11 @@
                         </div>
                         <div class="accordion-item border-0 mt-2">
                             <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed border rounded  btn-grad" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#HouseKeeping">
+                                <button class="accordion-button collapsed border rounded  btn-grad" type="button" data-bs-toggle="collapse" data-bs-target="#HouseKeeping">
                                     <i class='bx bxs-building-house me-2'></i> HouseKeeping
                                 </button>
                             </h2>
-                            <div id="HouseKeeping" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#sidebarAccordian">
+                            <div id="HouseKeeping" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#sidebarAccordian">
                                 <div class="accordion-body p-0">
                                     <div class="list-group">
                                         <a href="#" class="list-group-item rounded py-3 mt-1 border">House Keeping
@@ -172,27 +102,21 @@
                         </div>
                         <div class="accordion-item border-0 mt-2">
                             <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed border rounded  btn-grad" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#Reports">
+                                <button class="accordion-button collapsed border rounded  btn-grad" type="button" data-bs-toggle="collapse" data-bs-target="#Reports">
                                     <i class='bx bxs-report me-2'></i> Reports
                                 </button>
                             </h2>
-                            <div id="Reports" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#sidebarAccordian">
+                            <div id="Reports" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#sidebarAccordian">
                                 <div class="accordion-body p-0">
                                     <div class="list-group">
-                                        <a href="#"
-                                            class="list-group-item rounded py-3 mt-1 border border-primary text-primary">Inventory
+                                        <a href="#" class="list-group-item rounded py-3 mt-1 border border-primary text-primary">Inventory
                                             Logs</a>
-                                        <a href="#"
-                                            class="list-group-item rounded py-3 mt-1 border border-primary text-primary">Rate
+                                        <a href="#" class="list-group-item rounded py-3 mt-1 border border-primary text-primary">Rate
                                             Lags</a>
-                                        <a href="#"
-                                            class="list-group-item rounded py-3 mt-1 border border-primary text-primary">Rate
+                                        <a href="#" class="list-group-item rounded py-3 mt-1 border border-primary text-primary">Rate
                                             Sync
                                             Lags</a>
-                                        <a href="#"
-                                            class="list-group-item rounded py-3 mt-1 border border-primary text-primary">Booking
+                                        <a href="#" class="list-group-item rounded py-3 mt-1 border border-primary text-primary">Booking
                                             Analytics</a>
                                     </div>
                                 </div>
@@ -200,16 +124,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item rounded py-3 mt-2 border text-primary border-primary"><i
-                        class='bx bx-rotate-left'></i> OTA
+                <li class="list-group-item rounded py-3 mt-2 border text-primary border-primary"><i class='bx bx-rotate-left'></i>
+                    OTA
                     Reviews</li>
-                <li class="list-group-item rounded py-3 mt-2 border text-success border-success"><i
-                        class='bx bxs-message-square-dots'></i> Chart
+                <li class="list-group-item rounded py-3 mt-2 border text-success border-success"><i class='bx bxs-message-square-dots'></i> Chart
                     with Us</li>
             </ul>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>

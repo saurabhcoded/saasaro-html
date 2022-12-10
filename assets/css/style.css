@@ -1,3 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ====================
+CSS Variables 
+==================== */
+:root {
+  --color-primary: #ffe9dc;
+  --color-primary-light: #faeee8;
+  --color-secondary: #872345;
+  --color-secondary-light: #882e4c;
+  --color-tertiary: #ff6b19;
+  --color-tertiary-light: #fe7c37;
+  --color-dark: #25233b;
+  --color-dark-light: #2b293d;
+  /* Fonts  */
+  --font-primary: "Raleway", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+}
+* {
+  font-family: var(--font-secondary);
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.clip-circle {
+  clip-path: circle();
+}
+.color-primary {
+  color: var(--color-primary);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+.color-tertiary {
+  color: var(--color-tertiary);
+}
+.color-dark {
+  color: var(--color-dark-light);
+}
+.text-justify {
+  text-align: justify;
+}
+.nav-pills .nav-link {
+  color: inherit;
+}
+.nav-pills .nav-link.active {
+  background-color: var(--color-dark);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+.over-hide {
+  overflow: hidden;
+}
+/* ================
+Icon Sizes 
+================ */
+.icon-25 {
+  height: 25px;
+  width: 25px;
+  object-fit: contain;
+}
+.icon-50 {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+.icon-75 {
+  height: 75px;
+  width: 75px;
+  object-fit: contain;
+}
+.icon-100 {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+.icon-125 {
+  height: 125px;
+  width: 125px;
+  object-fit: contain;
+}
+.icon-150 {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+.icon-175 {
+  height: 175px;
+  width: 175px;
+  object-fit: contain;
+}
+.icon-200 {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+}
+.icon-225 {
+  height: 225px;
+  width: 225px;
+  object-fit: contain;
+}
+.icon-250 {
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+}
+.icon-275 {
+  height: 275px;
+  width: 275px;
+  object-fit: contain;
+}
+.icon-300 {
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+}
+/* ================
+backgrounds 
+================ */
+.background-primary {
+  background-color: var(--color-primary);
+}
+.background-secondary {
+  background-color: var(--color-secondary);
+}
+.background-tertiary {
+  background-color: var(--color-tertiary);
+}
+.background-dark {
+  background-color: var(--color-dark);
+}
+/* ================
+Fonts 
+================ */
+.font-10 {
+  font-size: 10px;
+}
+.font-12 {
+  font-size: 12px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-30 {
+  font-size: 30px;
+}
+.font-40 {
+  font-size: 40px;
+}
+.font-50 {
+  font-size: 50px;
+}
+.font-60 {
+  font-size: 60px;
+}
+.font-70 {
+  font-size: 70px;
+}
+.font-80 {
+  font-size: 80px;
+}
+.font-90 {
+  font-size: 90px;
+}
+.font-100 {
+  font-size: 100px;
+}
+.font-110 {
+  font-size: 110px;
+}
+.font-120 {
+  font-size: 120px;
+}
+.font-130 {
+  font-size: 130px;
+}
+.font-140 {
+  font-size: 140px;
+}
+.font-150 {
+  font-size: 150px;
+}
+.font-160 {
+  font-size: 160px;
+}
+/* ================
+Buttons 
+================ */
+.button-tertiary {
+  background-color: var(--color-tertiary);
+  color: white;
+  border-radius: 50px;
+}
+.button-tertiary:hover {
+  background-color: var(--color-tertiary-light);
+  color: white;
+}
+.button-outline-tertiary {
+  background-color: transparent;
+  color: var(--color-tertiary);
+  border-radius: 50px;
+  border: 1px solid var(--color-tertiary);
+}
+.button-outline-tertiary:hover {
+  background-color: var(--color-tertiary);
+  color: white;
+}
 .btn-grad {
   border: 1px solid lightblue !important;
   color: var(--bs-dark);
@@ -72,4 +295,76 @@
   position: fixed;
   left: 0;
   top: 10%;
+}
+
+.design-table {
+  border-radius: 10px !important;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgb(227, 227, 227);
+}
+
+.design-table tr th,
+.design-table tr td {
+  padding: 20px !important;
+}
+
+.design-table tbody tr {
+  border: 1px solid rgb(237, 237, 237);
+  margin-top: 5px;
+}
+
+.design-table thead {
+  background-color: rgb(213, 235, 242);
+}
+
+.swiper {
+  overflow: hidden;
+}
+
+.p-relative {
+  position: relative;
+}
+.upload {
+  opacity: 0;
+}
+
+/* Sidebar And MAin  */
+
+#sidebar {
+  position: fixed;
+  width: 300px;
+  height: calc(100% - 80px);
+  top: 80px;
+  overflow-y: auto;
+  transition: ease-in-out 0.2s;
+  z-index: 30;
+  background-color: white;
+}
+main {
+  position: absolute;
+  width: calc(100% - 300px) !important;
+  left: 300px;
+  top: 80px;
+  transition: 0.2s;
+  z-index: 20;
+}
+
+@media only screen and (max-width: 1100px) {
+  main {
+    width: 100% !important;
+    left: 0;
+  }
+}
+.sided main {
+  width: 100% !important;
+  left: 0px;
+}
+
+.sided #sidebar {
+  width: 0px;
+}
+
+.footer li {
+  list-style: none;
+  margin-top: 5px;
 }
